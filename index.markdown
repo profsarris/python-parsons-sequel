@@ -1,6 +1,7 @@
 ---
 # There are five Python exercises on this page.
 # Try and solve them all!
+<p>Drag or shuffle the blocks of code in the practice problems below. Remember to indent where appropriate by dragging blocks to the right. To check your work, press the “Get Feedback” button. To start over, press the “Reset Problem” button.</p>
 <h3>Q1</h3>
 <p> This first program should ask the user for a number. The program will then count down from that number until it gets to zero, after which it will print 'Blast off!</p>
 <p>Example</p>
