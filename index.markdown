@@ -5,9 +5,13 @@
 <p> This first program should ask the user for a number. The program will then count down from that number until it gets to zero, after which it will print 'Blast off!</p>
 <p>Example</p>
 <code>Enter a number: 5<br>
-    5<br>
-    4<br>
-    Blast off!</code>
+5<br>
+4<br>
+3<br>
+2<br>
+1<br>
+0<br>
+Blast off!</code>
 <div id="02-sortableTrash" class="sortable-code"></div> 
 <div id="02-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -43,8 +47,58 @@
   }); 
 })(); 
 </script>
+<p></p>
+<p> This next problem is a function. Its purpose is to find the largest number in a list of positive numbers.</p>
+<p>Example</p>
+<code>print(find_largest[5, 3, 1, 2, 10, 4, 2, 8]))<br>
+10</code>
+<p></p>
+<div id="03-sortableTrash" class="sortable-code"></div> 
+<div id="03-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="03-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="03-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def find_largest(numlist):\n" +
+    "  smallest = -1\n" +
+    "  for num in numlist:\n" +
+    "    if num &gt; smallest:\n" +
+    "      smallest = num\n" +
+    "  return smallest";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "03-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#03-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#03-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
-<p> This next program should ask the user for numbers until they type 'done'. Then the program should give the user the total of all the numbers they typed. </p>
+<p></p>
+<p> This next program should ask the user for numbers until they type 'quit'. Then the program should give the user the total of all the numbers they typed. </p>
+<p>Example</p>
+<code>Enter a number: 5<br>
+Enter a number: 2<br>
+Enter a number: 3<br>
+Enter a number: quit<br>
+Your total is 10</code>
 <div id="01-sortableTrash" class="sortable-code"></div> 
 <div id="01-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -84,8 +138,18 @@
   }); 
 })(); 
 </script>
-
-<p> This program should create a random number and then ask a user a math question using that number. If the user enters the number correctly, the program says 'Correct!' otherwise it apologizes and gives the real answer. The program continues asking questions until the user enters 'done'.</p>
+<p></p>
+<p> This next program should create a random number and then ask a user a math question using that number. If the user enters the number correctly, the program says 'Correct!' otherwise it apologizes and gives the real answer. The program continues asking questions until the user enters 'done'.</p>
+<p>Example</p>
+<code>What is 12 + 12: 24<br>
+Correct!<br>
+What is 18 + 18: 42<br>
+Sorry. The answer was 36<br>
+What is 24 + 24: 48<br>
+Correct!<br>
+What is 47 + 47: done<br>
+Thanks for playing and Bye!</code>
+<p></p>
 <div id="05-sortableTrash" class="sortable-code"></div> 
 <div id="05-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
