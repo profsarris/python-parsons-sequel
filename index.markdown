@@ -219,8 +219,7 @@ Thanks for playing and Bye!</code>
     "  resp = input(question)\n" +
     "  if resp == &quot;done&quot;:\n" +
     "    break\n" +
-    "  ans = resp\n" +
-    "  if int(ans) == (num + num):\n" +
+    "  if int(resp) == (num + num):\n" +
     "    print (&quot;Correct&quot;)\n" +
     "  else:\n" +
     "    print(&quot;Sorry. The answer was &quot;, str(num+num)) \n" +
