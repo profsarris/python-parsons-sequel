@@ -100,8 +100,8 @@ Blast off!</code>
 Enter a number: 5<br>
 Enter a number: marshmallow<br>
 Silly user! That's not a number!<br>
-Enter a number: 6
-Enter a number: 8
+Enter a number: 6<br>
+Enter a number: 8<br>
 You total sum is 26</code>
 <div id="04-sortableTrash" class="sortable-code"></div> 
 <div id="04-sortable" class="sortable-code"></div> 
