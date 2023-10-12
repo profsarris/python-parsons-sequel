@@ -134,7 +134,7 @@ blue boat</code><br>
     "    for thing in things:\n" +
     "      index = random.randint(0, len(colors)-1)\n" +
     "      color = colors[index]\n" +
-    "      out.write(color + &quot; &quot; + thing + &quot;\n&quot;)\n" +
+    "      out.write(color + &quot; &quot; + thing + &quot;&#92;n&quot;)\n" +
     "with open(filename, &quot;r&quot;) as in: #distractor\n" +
     "for color in colors #distractor";
   var parsonsPuzzle = new ParsonsWidget({
