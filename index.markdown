@@ -65,11 +65,11 @@ Blast off!</code>
 <script type="text/javascript"> 
 (function(){
   var initial = "def find_largest(numlist):\n" +
-    "  largest = -1\n" +
+    "  smallest = -1\n" +
     "  for num in numlist:\n" +
-    "    if num &gt; largest:\n" +
-    "      largest = num\n" +
-    "  return largest";
+    "    if num &gt; smallest:\n" +
+    "      smallest = num\n" +
+    "  return smallest";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "03-sortable",
     "max_wrong_lines": 10,
