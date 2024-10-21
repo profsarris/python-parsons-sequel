@@ -112,7 +112,7 @@
 <code>colors = ['red', 'yellow', 'blue']<br>
 vehicles = ['car', 'truck', 'boat']<br>
 filename = "/content/drive/My Drive/vehicles.txt"<br>
-<p>then mixmaster(colors, vehicls, filename) should return:</p>
+<p>then mixmaster(colors, vehicles, filename) should return:</p>
 <code>red car<br>
 yellow truck<br>
 blue boat</code><br>
