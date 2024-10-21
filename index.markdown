@@ -51,13 +51,13 @@
 
 <p></p>
 <h3>Q2</h3>
-<p> This next problem is a function. Its purpose is to read from the file passed in. On each line of the file are numbers separated by spaces. totaler() will add all of the numbers together and return that number</p>
+<p> This next problem is a function. Its purpose is to read from the file passed in. On each line of the file are numbers separated by spaces. <code>totaler()</code> will add all of the numbers together and return that number</p>
 <p>Example</p>
 <p>If the file numbers.txt contains:</p>
 <code>1 1 1<br>
 2 2 2<br>
 3 3 3<br></code>
-<p>then totaler("numbers.txt") should return:</p>
+<p>then <code>totaler("numbers.txt")</code> should return:</p>
 <code>18</code><br>
 <p> This Parsons problem contains a <b>distractor</b> - a line of code that doesn't belong. Drag only the lines of code that belong from the left to the right. In this problem, there is only one line that doesn't belong.</p>
 
@@ -112,7 +112,7 @@
 <code>colors = ['red', 'yellow', 'blue']<br>
 vehicles = ['car', 'truck', 'boat']<br>
 filename = "/content/drive/My Drive/vehicles.txt"<br>
-<p>then mixmaster(colors, vehicles, filename) should return:</p>
+<p>then <code>mixmaster(colors, vehicls, filename)</code> should write to <code>filename</code>:</p>
 <code>red car<br>
 yellow truck<br>
 blue boat</code><br>
